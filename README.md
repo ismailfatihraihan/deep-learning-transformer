@@ -1,74 +1,63 @@
-# Kumpulan Proyek NLP Menggunakan Arsitektur Transformer
+# NLP Projects with Transformer Architecture
 
-Repositori ini berisi kumpulan proyek Natural Language Processing (NLP) yang diimplementasikan menggunakan arsitektur Transformer. Proyek ini mencakup dua kasus penggunaan utama: Analisis Sentimen dan Chatbot.
-
----
-
-## 📂 Daftar Proyek
-
-### 1. Analisis Sentimen Pilkada
-* **File Notebook:** `Analisis Sentimen Pilkada_Transformer.ipynb`
-* **Deskripsi:** Proyek ini berfokus pada analisis sentimen teks yang berkaitan dengan Pemilihan Kepala Daerah (Pilkada). Model Transformer (seperti BERT atau varian lainnya) digunakan untuk mengklasifikasikan data teks ke dalam kategori sentimen tertentu (misalnya, positif, negatif, atau netral).
-* **Tujuan:** Memahami opini dan sentimen publik terhadap isu-isu terkait Pilkada berdasarkan data teks.
-
-### 2. Analisis dan Evaluasi Chatbot
-* **File Notebook:** `Transformer_Analisis Chatbot.ipynb`
-* **Deskripsi:** Proyek ini adalah implementasi model chatbot atau sistem *sequence-to-sequence* yang menggunakan arsitektur Transformer. Notebook ini mencakup langkah-langkah untuk melatih atau melakukan *fine-tuning* model untuk menghasilkan respons berdasarkan input pengguna.
-* **Evaluasi:** Kualitas respons yang dihasilkan oleh model dievaluasi menggunakan metrik **ROUGE** (Recall-Oriented Understudy for Gisting Evaluation), yang mengukur tumpang tindih n-gram antara respons yang dihasilkan dan respons referensi (ground truth).
+A collection of Natural Language Processing (NLP) projects built using Transformer-based models. This repository covers two main use cases: sentiment analysis and chatbot evaluation.
 
 ---
 
-## 🚀 Teknologi Utama
+## Projects
 
-* **Python 3.x**
-* **TensorFlow / Keras**
-* **KerasNLP:** Digunakan untuk implementasi komponen arsitektur Transformer yang lebih mudah.
-* **Pandas & NumPy:** Untuk manipulasi dan pemrosesan data.
-* **Rouge-score:** Untuk evaluasi model generatif (chatbot).
-* **Matplotlib / Seaborn:** (Kemungkinan digunakan) untuk visualisasi data dan hasil model.
+### 1. Pilkada Sentiment Analysis
+**Notebook:** `Analisis Sentimen Pilkada_Transformer.ipynb`
 
----
+Sentiment classification of text data related to Indonesian regional elections (Pilkada). A Transformer model (BERT or variant) is used to categorize public opinion into positive, negative, or neutral sentiment.
 
-## ⚙️ Instalasi
-
-Untuk menjalankan proyek-proyek ini, Anda perlu menginstal beberapa *library* Python.
-
-1.  **Clone repositori ini:**
-    ```bash
-    git clone [URL-REPOSITORI-ANDA]
-    cd [NAMA-DIREKTORI-ANDA]
-    ```
-
-2.  **Buat lingkungan virtual (direkomendasikan):**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # Untuk Linux/Mac
-    .\venv\Scripts\activate   # Untuk Windows
-    ```
-
-3.  **Instal dependensi yang diperlukan:**
-    Berdasarkan file notebook, *library* utama yang dibutuhkan adalah:
-    ```bash
-    pip install --upgrade pip
-    pip install tensorflow pandas numpy jupyter
-    pip install -U keras-nlp
-    pip install rouge-score pyarrow
-    ```
+**Goal:** Understand public sentiment toward Pilkada-related issues from text data.
 
 ---
 
-## 🏃‍♀️ Cara Menjalankan
+### 2. Chatbot Analysis & Evaluation
+**Notebook:** `Transformer_Analisis Chatbot.ipynb`
 
-1.  Pastikan semua dependensi telah terinstal.
-2.  Jalankan Jupyter Notebook dari terminal Anda:
-    ```bash
-    jupyter notebook
-    ```
-3.  Buka salah satu file `.ipynb` (misalnya, `Analisis Sentimen Pilkada_Transformer.ipynb`).
-4.  Jalankan sel-sel di dalam notebook secara berurutan untuk melihat proses analisis, pelatihan, dan evaluasi.
+A sequence-to-sequence chatbot implementation using the Transformer architecture. The notebook covers model training and fine-tuning steps, with response quality evaluated using the **ROUGE** metric (n-gram overlap between generated and reference responses).
 
 ---
 
-## 🤝 Kontribusi
+## Tech Stack
 
-Jika Anda menemukan masalah atau memiliki saran untuk perbaikan, silakan buat *Issue* atau ajukan *Pull Request*.
+- **Language:** Python 3.x
+- **Deep Learning:** TensorFlow / Keras
+- **NLP:** KerasNLP
+- **Data Processing:** Pandas, NumPy
+- **Evaluation:** rouge-score
+- **Visualization:** Matplotlib, Seaborn
+
+---
+
+## Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
+
+2. **Create a virtual environment (recommended)**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate      # Linux/Mac
+   .\venv\Scripts\activate       # Windows
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install --upgrade pip
+   pip install tensorflow pandas numpy jupyter
+   pip install -U keras-nlp
+   pip install rouge-score pyarrow
+   ```
+
+4. **Run the notebook**
+   ```bash
+   jupyter notebook
+   ```
+   Open the desired `.ipynb` file and run cells sequentially.
